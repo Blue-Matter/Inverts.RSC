@@ -20,7 +20,7 @@ cond.RSC = function(RCMinput, sims = 12, max_F=0.5, resample = T, silent=T){
 
 
   RCMfit = RCM(OM, RCMinput[[3]], s_selectivity = c("B","B"),
-             max_F = maxF, mean_fit = T, condition = "catch", cores = 8,
+             max_F = max_F, mean_fit = T, condition = "catch", cores = 8,
              drop_nonconv=T, drop_highF=T,resample = T, silent=silent)
 
   RCMfit@OM@Name = paste0("Giant Red Sea Cucumber QMA ",RCMinput[[1]])
