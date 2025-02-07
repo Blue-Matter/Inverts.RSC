@@ -13,7 +13,7 @@
 #' @author T. Carruthers
 #' @seealso \link{RCM}
 #' @export
-cond.RSC = function(RCMinput, sims = 12, max_F=0.5, resample = T, parallel = T, silent=T){
+cond.RSC = function(RCMinput, sims = 12, max_F=0.5, resample = T, parallel = F, silent=T){
   if(parallel){
     setup()
     cores=parallel::detectCores()/2

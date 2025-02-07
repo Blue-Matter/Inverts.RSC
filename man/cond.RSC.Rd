@@ -9,7 +9,7 @@ cond.RSC(
   sims = 12,
   max_F = 0.5,
   resample = T,
-  parallel = T,
+  parallel = F,
   silent = T
 )
 }
