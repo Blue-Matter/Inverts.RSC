@@ -4,7 +4,14 @@
 \alias{cond.RSC}
 \title{Condition an operating model for Giant Red Sea Cucumber}
 \usage{
-cond.RSC(RCMinput, sims = 12, max_F = 0.5, resample = T, silent = T)
+cond.RSC(
+  RCMinput,
+  sims = 12,
+  max_F = 0.5,
+  resample = T,
+  parallel = T,
+  silent = T
+)
 }
 \arguments{
 \item{sims}{Integer or vector of integers - the number of simulations for the operating model (e.g. 96) or the specific vector of simulations for the operating model (e.g. 13:48)}
@@ -12,6 +19,8 @@ cond.RSC(RCMinput, sims = 12, max_F = 0.5, resample = T, silent = T)
 \item{max_F}{Positive real number - the maximum instantaneous mortality rate in any historical time step}
 
 \item{resample}{Logical - should parameters be drawn from the variance covariance matrix of the MLE fit (T) or just the MLE parameter values (F)}
+
+\item{parallel}{Logical - should model fitting use multiple cores}
 
 \item{silent}{Logical - should all RCM messages be repressed (ie not read out onto the console)?}
 
