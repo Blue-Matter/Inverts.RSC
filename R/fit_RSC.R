@@ -14,6 +14,7 @@
 #' @seealso \link{RCM}
 #' @export
 cond.RSC = function(RCMinput, sims = 12, max_F=0.5, resample = T, parallel = F, silent=T){
+  cores = 1
   if(parallel){
     setup()
     cores=parallel::detectCores()/2
